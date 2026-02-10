@@ -1,0 +1,558 @@
+.agrarian-digest {
+  width: 210mm;
+  min-height: 297mm;
+  background: white;
+  padding: 15mm;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(135deg, #4a7c59, #6b9b7f);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.logo-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d4a3e;
+}
+
+.logo-tagline {
+  font-size: 9px;
+  color: #666;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2d4a3e;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.section {
+  background: #f8f9fa;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.section-header {
+  background: #4a5f52;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.section-header-dark {
+  background: #3d4f44;
+  color: white;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 0 0;
+}
+
+.identification-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 12px;
+}
+
+.farmer-photo {
+  width: 100%;
+  height: 140px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.farmer-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.map-small {
+  background: #e8f5e9;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.map-marker {
+  font-size: 24px;
+}
+
+.location-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2d4a3e;
+  margin-top: 5px;
+}
+
+.info-grid {
+  padding: 0 12px 12px 12px;
+}
+
+.info-row {
+  display: flex;
+  padding: 6px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 11px;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-weight: bold;
+  min-width: 140px;
+  color: #2d4a3e;
+}
+
+.info-value {
+  color: #333;
+}
+
+.economic-list {
+  padding: 12px;
+}
+
+.economic-item {
+  display: flex;
+  align-items: baseline;
+  padding: 6px 0;
+  font-size: 11px;
+}
+
+.checkmark {
+  color: #4a7c59;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.economic-label {
+  flex: 1;
+  color: #2d4a3e;
+}
+
+.economic-value {
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+}
+
+.credit-score-section {
+  background: #f8f9fa;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.score-display {
+  padding: 15px;
+}
+
+.score-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.gore-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.score-label {
+  font-size: 10px;
+  font-weight: bold;
+  color: #666;
+}
+
+.progress-bar {
+  width: 60px;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #f59e0b, #84cc16);
+  border-radius: 4px;
+}
+
+.score-value {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2d4a3e;
+}
+
+.rating-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.score-rating {
+  font-size: 12px;
+  font-weight: bold;
+  color: #f59e0b;
+}
+
+.rating-bar {
+  width: 40px;
+  height: 8px;
+  background: #f59e0b;
+  border-radius: 4px;
+}
+
+.score-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.status-label {
+  font-size: 11px;
+  color: #666;
+}
+
+.status-bar {
+  flex: 1;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.status-fill {
+  width: 70%;
+  height: 100%;
+  background: #84cc16;
+  border-radius: 4px;
+}
+
+.status-value {
+  font-size: 11px;
+  font-weight: bold;
+  color: #2d4a3e;
+}
+
+.loan-limit {
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.limit-label {
+  font-size: 10px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.limit-amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d4a3e;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.currency-icon {
+  font-size: 14px;
+}
+
+.map-section {
+  background: #f8f9fa;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 160px;
+}
+
+.coordinates-map {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-placeholder {
+  position: relative;
+}
+
+.map-marker-large {
+  font-size: 36px;
+}
+
+.coordinates {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-align: right;
+  background: rgba(255,255,255,0.9);
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.coord-value {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2d4a3e;
+}
+
+.coord-label {
+  font-size: 9px;
+  color: #666;
+}
+
+.radar-section {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.indices-section {
+  background: #f8f9fa;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.indices-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+.indices-table thead {
+  background: #3d4f44;
+  color: white;
+}
+
+.indices-table th {
+  padding: 8px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.indices-table td {
+  padding: 8px;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+
+.indices-table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.indices-table tbody tr:nth-child(odd) {
+  background: white;
+}
+
+.index-code-score {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.index-code {
+  background: #2d4a3e;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.index-score {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d4a3e;
+}
+
+.index-name {
+  font-size: 10px;
+  color: #2d4a3e;
+  font-weight: 600;
+}
+
+.band-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.band-badge.high {
+  background: #84cc16;
+  color: white;
+}
+
+.band-badge.moderate {
+  background: #f59e0b;
+  color: white;
+}
+
+.band-badge.resilient {
+  background: #10b981;
+  color: white;
+}
+
+.band-badge.ready {
+  background: #84cc16;
+  color: white;
+}
+
+.band-badge.high-capacity {
+  background: #4a7c59;
+  color: white;
+}
+
+.band-badge.commercial {
+  background: #d97706;
+  color: white;
+}
+
+.band-badge.eligible {
+  background: #059669;
+  color: white;
+}
+
+.index-description {
+  font-size: 9px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.description-col {
+  width: 45%;
+}
+
+.recommendation {
+  background: #e8f5e9;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 11px;
+}
+
+.recommendation-label {
+  font-weight: bold;
+  color: #2d4a3e;
+}
+
+.recommendation-value {
+  color: #2d4a3e;
+}
+
+.recommendation-value em {
+  font-style: italic;
+}
+
+.footer {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #2d4a3e, #4a7c59);
+  padding: 12px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: white;
+  font-size: 11px;
+}
+
+.footer-logo-icon {
+  width: 30px;
+  height: 30px;
+  background: white;
+  color: #2d4a3e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.footer-text {
+  color: white;
+}
+
+.footer-url {
+  color: white;
+  font-weight: bold;
+}
+
+@media print {
+  .agrarian-digest {
+    box-shadow: none;
+    margin: 0;
+    padding: 10mm;
+  }
+  
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}
